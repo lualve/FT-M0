@@ -76,6 +76,7 @@ function tienenMismaLongitud(str1, str2) {
   if (str1.length === str2.length){
     return true;
   }else{return false;}
+  
 }
 
 function menosQueNoventa(num) {
@@ -132,7 +133,7 @@ function elevarAlCuadrado(num) {
   // ojo: No es raiz cuadrada!
   // Tu código:
   var resultado = 0;
-  resultado = Math.pow(num, 2);
+  resultado = num **2;
   return resultado
 }
 
