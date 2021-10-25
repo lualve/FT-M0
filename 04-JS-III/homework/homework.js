@@ -3,27 +3,24 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
-  var primerElemento = 0;
-  primerElemento = array.shift()
-  return primerElemento
+ 
+  return array.shift()
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  var ultimoElemento = 0;
-  ultimoElemento = array.pop()
-  return ultimoElemento
+
+  return array.pop()
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  var largo = 0;
-  largo = array.length
-  return largo
+
+  return array.length
 }
 
 
@@ -70,7 +67,6 @@ function dePalabrasAFrase(palabras) {
     if(i < palabras.length-1) {
       concat=concat +' ';}
   }
-
   return concat
 }
 
