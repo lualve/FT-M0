@@ -39,7 +39,7 @@ function sumarArray(numeros, cb) {
     for(var i = 0; i < numeros.length; i++){
       suma = suma + numeros[i]
     }
-    return cb(suma)
+    cb(suma)
 }
 
 function forEach(array, cb) {
@@ -57,11 +57,11 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-var newarray = []
-for (var i = 0; i < array.length; i++) {
-    cb(array[i])
-    newarray[i]=array[i]
-}
+  var newarray = array.map(function(res){
+    return cb(res)
+  })
+    
+return newarray
 
 }
 
@@ -78,7 +78,6 @@ function filter(array) {
     }
   }
 return narray
-
 
 }
 

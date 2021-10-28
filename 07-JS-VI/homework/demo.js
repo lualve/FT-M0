@@ -1,22 +1,24 @@
-function saludo(parametro){
-    return console.log('hola '+ parametro)
-}
-function despedida(parametro){
-    return console.log('bye ' + parametro)
+function suma(x , y) {
+    return r = x+y
 }
 
-function crearsaludo(usuario, cb){
-    return cb(usuario)
+function multi(x , y) {
+    return r = x*y
 }
-crearsaludo('carl', despedida)
 
-
-
-var array = ['ale','pero','alex','pil','nene','andar'] 
-var newarray = []
-for (var i = 0; i < array.length; i++) {
-   // cb(array[i])
-    newarray[i]=array[i]
+function crearOperacion(x,y,cb){
+    
+    return  cb(x,y)
 }
-console.log(newarray)
 
+var array = ['mat', 'luis','ale', 'bon', 'you', 'carl']
+var cont = 0
+var newarray[cont] = array.map(function(elemento){
+    if(elemento[0]==='a'){
+        cont++
+        return elemento;
+        
+    }
+  })
+  
+  console.log(newarray)
